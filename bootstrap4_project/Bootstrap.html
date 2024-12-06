@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bootstrap Website</title>
+
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar (Using Bootstrap Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Bootstrap Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Large Introduction Section) -->
+    <header class="bg-info text-white text-center py-5">
+        <h1>Welcome to My SFU Bootstrap Website</h1>
+        <p class="lead">This is a my Simon Fraser University website built with Bootstrap.</p>
+        <a href="#about" class="btn btn-light btn-lg">Learn More</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>About Us</h2>
+                <p>Consistently ranked among Canada’s top research-intensive universities, SFU is a world leader in research, knowledge development and sustainability.At SFU, we forge lasting partnerships that enhance the social, economic, and cultural well-being of the communities we serve.
+
+                    We equip our students with the knowledge, skills and experiences that prepare them for life in an ever-changing and challenging world.
+                    
+                    With more than 200,000 alumni around the world, our work and impact can be seen in all corners of the globe.
+                    </p>
+            </div>
+            <div class="col-lg-6">
+                <img src="C:\Users\rajum\OneDrive\Documents\GitHub\HTML-and-CSS-projects\bootstrap4_project\Img\S1.jpeg" alt="About Image" class="img-fluid rounded">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Our Services</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="C:\Users\rajum\OneDrive\Documents\GitHub\HTML-and-CSS-projects\bootstrap4_project\Img\S2.jpg" class="card-img-top" alt="Service 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Library</h5>
+                            <p class="card-text">SFU’s libraries are vibrant educational hubs that support learning, research and community engagement.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="C:\Users\rajum\OneDrive\Documents\GitHub\HTML-and-CSS-projects\bootstrap4_project\Img\S3.jpg" class="card-img-top" alt="Service 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Dining Commons</h5>
+                            <p class="card-text">Located next to SFU's residence community, Dining Commons features dining options from 10+ culinary stations, and plenty of space to share a meal with friends or plug in your laptop while you grab a bite and study. This all-you-care-to eat establishment is open to all students, faculty, staff, and the community. 
+                                    </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="C:\Users\rajum\OneDrive\Documents\GitHub\HTML-and-CSS-projects\bootstrap4_project\Img\S4.jpg" class="card-img-top" alt="Service 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Campus Safety and Security</h5>
+                            <p class="card-text">The Campus Public Safety (CPS) department is committed to ensuring safe and secure campuses at SFU by providing public safety and resource protection services to the university community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center">Contact Us</h2>
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 My Bootstrap Website | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies (JS, Popper, and Bootstrap JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
